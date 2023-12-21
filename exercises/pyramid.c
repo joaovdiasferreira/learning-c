@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+
+    int rows, i, j;
+    printf("Number of rows: ");
+    scanf("%d", &rows);
+
+    for(i = 1; i <= rows; i++) {
+        for(j = rows - i; j >= 1; j--) {
+            printf(" ");
+        }
+        for(j = 1; j <= i * 2 - 1; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
